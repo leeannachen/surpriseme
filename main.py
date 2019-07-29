@@ -7,7 +7,3 @@ types2 = ["Movies", "Music", "Performances", "Parks", "Museums", "Shopping Malls
 restaurant_type = random.choice(types1)
 
 entertainment_type = random.choice(types2)
-
-print restaurant_type
-
-print entertainment_type
