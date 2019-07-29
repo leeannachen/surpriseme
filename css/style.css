@@ -33,4 +33,14 @@ body{
 .surprisemebutton{
   text-align: center;
   padding: 10%;
+  border: 10px solid #001100;
+}
+#restaurantid{
+  padding: 5%;
+  border: 10px solid #ff2667;
+}
+
+#entertainmentid{
+  padding: 5%;
+  border: 10px solid #ff2667;
 }
