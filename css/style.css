@@ -37,10 +37,10 @@ body{
 }
 #restaurantid{
   padding: 5%;
-  border: 10px solid #ff2667;
+  border: 5px dotted #ff2667;
 }
 
 #entertainmentid{
   padding: 5%;
-  border: 10px solid #ff2667;
+  border: 5px dotted #ff2667;
 }
