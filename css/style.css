@@ -1,3 +1,36 @@
+html {
+background: linear-gradient(41deg, #22e878, #0b91ff);
+background-size: 400% 400%;
+
+-o-animation: AnimationName 22s ease infinite;
+animation: AnimationName 22s ease infinite;
+
+
+@-o-keyframes AnimationName {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+ }
+}
+
 html{
-  
+  font-family: monospace;
+
+}
+
+body{
+
+}
+.header{
+  text-align: center;
+
+}
+.surprisemebutton{
+  text-align: center;
+  padding: 10%;
 }
