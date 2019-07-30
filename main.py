@@ -16,7 +16,7 @@ class WelcomePage(webapp2.RequestHandler):
 
 class Restaurant(webapp2.RequestHandler):
     def get(self):
-        template = the_jinja_env.get_template('../templates/restaurant.html')
+        template = the_jinja_env.get_template('restaurant.html')
         types1 = ["American", "Barbecue", "Chinese", "French", "Hamburger", "Indian", "Italian", "Japanese", "Mexican", "Pizza", "Seafood", "Steak", "Sushi", "Thai"]
         restaurant_type = random.choice(types1)
         template_vars = {"type" : restaurant_type}
@@ -24,7 +24,7 @@ class Restaurant(webapp2.RequestHandler):
 
 class Entertainment(webapp2.RequestHandler):
     def get(self):
-        template = the_jinja_env.get_template('../templates/entertainment.html')
+        template = the_jinja_env.get_template('entertainment.html')
         types2 = ["Movies", "Music", "Performances", "Parks", "Museums", "Shopping Malls", "Game Rooms", "Sports"]
         entertainment_type = random.choice(types2)
         template_vars = {"type" : entertainment_type}
@@ -32,7 +32,7 @@ class Entertainment(webapp2.RequestHandler):
 
 class Locations(webapp2.RequestHandler):
     def get(self):
-        template = the_jinja_env.get_template('../templates/locations.html')
+        template = the_jinja_env.get_template('locations.html')
         self.response.write(template.render())  # the response
 
 app = webapp2.WSGIApplication([
