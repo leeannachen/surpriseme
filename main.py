@@ -3,13 +3,6 @@ import jinja2
 import os
 import random
 
-types1 = ["American", "Barbecue", "Chinese", "French", "Hamburger", "Indian", "Italian", "Japanese", "Mexican", "Pizza", "Seafood", "Steak", "Sushi", "Thai"]
-
-types2 = ["Movies", "Music", "Performances", "Parks", "Museums", "Shopping Malls", "Game Rooms", "Sports"]
-
-restaurant_type = random.choice(types1)
-
-entertainment_type = random.choice(types2)
 
 the_jinja_env = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
@@ -24,12 +17,18 @@ class WelcomePage(webapp2.RequestHandler):
 class Restaurant(webapp2.RequestHandler):
     def get(self):
         template = the_jinja_env.get_template('templates/restaurant.html')
-        self.response.write(template.render())  # the response
+        types1 = ["American", "Barbecue", "Chinese", "French", "Hamburger", "Indian", "Italian", "Japanese", "Mexican", "Pizza", "Seafood", "Steak", "Sushi", "Thai"]
+        restaurant_type = random.choice(types1)
+        template_vars = {"type" : restaurant_type}
+        self.response.write(template.render(template_vars))  # the response
 
 class Entertainment(webapp2.RequestHandler):
     def get(self):
         template = the_jinja_env.get_template('templates/entertainment.html')
-        self.response.write(template.render())  # the response
+        types2 = ["Movies", "Music", "Performances", "Parks", "Museums", "Shopping Malls", "Game Rooms", "Sports"]
+        entertainment_type = random.choice(types2)
+        template_vars = {"type" : entertainment_type}
+        self.response.write(template.render(template_vars))  # the response
 
 class Locations(webapp2.RequestHandler):
     def get(self):
