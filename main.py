@@ -3,7 +3,10 @@ import jinja2
 import os
 import random
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c9944e90386a9e9113d6b39e0bd908c4c22c43c3
 the_jinja_env = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
     extensions=['jinja2.ext.autoescape'],
