@@ -4,29 +4,43 @@
     <meta charset="utf-8">
     <title>Welcome</title>
     <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Text+Me+One&display=swap" rel="stylesheet">
     <style>
       h1 {
         font-size: .75em;
-        color: white;
-        text-shadow: .05em .05em black;
-        letter-spacing: .2rem;
+        color: black;
+        text-shadow: .045em .045em grey;
+        letter-spacing: .8rem;
       }
       .surprisemebutton{
-        font-family: muli;
-        border: 2px solid white;
-        border-radius: .5em;
+        font-family: 'Text Me One', sans-serif;
+        border: 2px solid black;
+        border-radius: 50px;
         align-items: center;
         align-self: center;
         align-content: center;
         border-width: thick;
-        width: 35%;
-        background-color: grey;
-      }
+        width: 45%;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+    }
       a {
         color: black;
       }
       a:visited {
         color: inherit;
+      }
+      html {
+        background: linear-gradient(342deg, #d8ecff, #596ac6, #8649ce, #b69ae4, #79ceb8, #0fbd90, #a1ddb3);
+        background-size: 1400% 1400%;
+
+        animation: AnimationName 50s ease infinite;
+        }
+      @keyframes AnimationName {
+          0%{background-position:2% 0%}
+          50%{background-position:99% 100%}
+          100%{background-position:2% 0%}
       }
     </style>
   </head>
