@@ -20,6 +20,7 @@ html {
   padding: 10%;
   border: 10px;
 }
+
 #restaurantid{
   padding: 5%;
   border: 5px  #ff2667;
@@ -33,7 +34,7 @@ html {
   border: 5px  #ff2667;
   background: linear-gradient(342deg, #d8ecff, #9ca6dd, #b69ae4, #a8e4d5, #bfeacc);
   background-size: 1000% 1000%;
-  animation: NameAnimation 40s ease infinite;
+  animation: NameAnimation 35% ease infinite;
 }
 
 @keyframes NameAnimation {
