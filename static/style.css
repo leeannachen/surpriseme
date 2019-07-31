@@ -23,12 +23,13 @@ html{
 
 }
 
+
 body{
 
 }
+
 .header{
   text-align: center;
-
 }
 .surprisemebutton{
   font-size: 80px;
@@ -55,8 +56,18 @@ body{
   animation: NameAnimation 40s ease infinite;
 }
 
-  @keyframes NameAnimation {
-      0%{background-position:2% 0%}
-      50%{background-position:99% 100%}
-      100%{background-position:2% 0%}
-  }
+@keyframes NameAnimation {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+
+.result{
+float:left;
+margin:10%;
+}
+
+.iframeapi{
+  float:right;
+  margin:10%;
+}
