@@ -12,7 +12,7 @@
         text-shadow: .045em .045em grey;
         letter-spacing: .8rem;
       }
-      .surprisemebutton{
+      #surprisemebutton{
         font-family: 'Text Me One', sans-serif;
         border: 2px solid black;
         border-radius: 50px;
@@ -47,13 +47,15 @@
   </head>
   <body>
   <div>
-  <section class="surprisemebutton">
+  <section id="surprisemebutton">
     <div class="header">
       <h1>SURPRISE ME</h1>
     </div>
-    <button id="restaurantid" type="button"><a href="/restaurant">Food Me</a></button>
-    <button id="entertainmentid" type="button"><a href="/entertainment">Entertain Me</a></button>
-  </section>
+  <div class="anchors">
+    <a href="restaurant" id="entertainmentid">Entertain Me</a>
+    <a href="restaurant" id="restaurantid">Food Me</a>
+    </div>
  </div>
+</section>
   </body>
 </html>
