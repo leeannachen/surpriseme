@@ -18,14 +18,14 @@ def get_random_entertainment():
     entertainment_type = random.choice(types2)
     return entertainment_type
 
-food_image_url: {
+food_image_url = {
     "American" : "/static/pics/american.png",
     "Barbecue" : "/static/pics/barbecue.png",
     "Chinese" : "/static/pics/chinese.png",
     "French" : "/static/pics/french.png",
     "Hamburger" : "/static/pics/hamburger.png",
     "Indian" : "/static/pics/indian.png",
-    "Italian" : "/static/pics/italin.png",
+    "Italian" : "/static/pics/italian.png",
     "Japanese" : "/static/pics/japanese.png",
     "Mexican" : "/static/pics/mexican.png",
     "Pizza" : "/static/pics/pizza.png",
@@ -34,17 +34,16 @@ food_image_url: {
     "Sushi" : "/static/pics/sushi.png",
     "Thai" : "/static/pics/thai.png"
 }
-
-entertainment_image_url: {
-    "Movies" : ,
-    "Music" : ,
-    "Performances" : ,
-    "Parks" : ,
-    "Museums" : ,
-    "Shopping Malls" : ,
-    "Game Rooms" : ,
-    "Sports" :
-}
+# entertainment_image_url = {
+#     "Movies" : ,
+#     "Music" : ,
+#     "Performances" : ,
+#     "Parks" : ,
+#     "Museums" : ,
+#     "Shopping Malls" : ,
+#     "Game Rooms" : ,
+#     "Sports" :
+# }
 
 class WelcomePage(webapp2.RequestHandler):
     def get(self):
