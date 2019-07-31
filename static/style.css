@@ -1,11 +1,9 @@
 html {
 background: linear-gradient(41deg, #22e878, #0b91ff);
 background-size: 400% 400%;
-
+font-family: monospace;
 -o-animation: AnimationName 22s ease infinite;
 animation: AnimationName 22s ease infinite;
-
-
 @-o-keyframes AnimationName {
     0%{background-position:0% 92%}
     50%{background-position:100% 9%}
@@ -16,16 +14,6 @@ animation: AnimationName 22s ease infinite;
     50%{background-position:100% 9%}
     100%{background-position:0% 92%}
  }
-}
-
-html{
-  font-family: monospace;
-
-}
-
-
-body{
-
 }
 
 .header{
@@ -42,7 +30,6 @@ body{
   border: 5px  #ff2667;
   background: linear-gradient(342deg, #d8ecff, #9ca6dd, #b69ae4, #a8e4d5, #bfeacc);
   background-size: 1000% 1000%;
-
   animation: NameAnimation 35s ease infinite;
 }
 
@@ -51,8 +38,6 @@ body{
   border: 5px  #ff2667;
   background: linear-gradient(342deg, #d8ecff, #9ca6dd, #b69ae4, #a8e4d5, #bfeacc);
   background-size: 1000% 1000%;
-
-
   animation: NameAnimation 40s ease infinite;
 }
 
