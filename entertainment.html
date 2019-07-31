@@ -8,10 +8,14 @@
   <body>
     <h1>{{type}}</h1>
 
+    <form method="post" action="/locations">
+      <input type="hidden" name="template_variable" value={{type}}>
+      <input type="submit" value="Submit">
+    </form>
+
 <div class="iframeapi">
 
     <iframe src="" width="" height=""></iframe>
-
   </div>
 
   </body>
