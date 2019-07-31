@@ -4,17 +4,41 @@
     <meta charset="utf-8">
     <title>Welcome</title>
     <link rel="stylesheet" href="static/style.css">
-
+    <style>
+      h1 {
+        font-size: .75em;
+        color: white;
+        text-shadow: .05em .05em black;
+        letter-spacing: .2rem;
+      }
+      .surprisemebutton{
+        font-family: muli;
+        border: 2px solid white;
+        border-radius: .5em;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        border-width: thick;
+        width: 35%;
+        background-color: grey;
+      }
+      a {
+        color: black;
+      }
+      a:visited {
+        color: inherit;
+      }
+    </style>
   </head>
   <body>
+  <div>
+  <section class="surprisemebutton">
     <div class="header">
       <h1>Surprise Me!</h1>
-  </div>
-   <div class="">
-  <div class="surprisemebutton">
+    </div>
     <button id="restaurantid" type="button"><a href="/restaurant">Food Me</a></button>
     <button id="entertainmentid" type="button"><a href="/entertainment">Entertain Me</a></button>
-  </div>
-</div>
+  </section>
+ </div>
   </body>
 </html>
