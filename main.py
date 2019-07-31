@@ -18,6 +18,33 @@ def get_random_entertainment():
     entertainment_type = random.choice(types2)
     return entertainment_type
 
+food_image_url = {
+    "American" : "/static/pics/american.png",
+    "Barbecue" : "/static/pics/barbecue.png",
+    "Chinese" : "/static/pics/chinese.png",
+    "French" : "/static/pics/french.png",
+    "Hamburger" : "/static/pics/hamburger.png",
+    "Indian" : "/static/pics/indian.png",
+    "Italian" : "/static/pics/italin.png",
+    "Japanese" : "/static/pics/japanese.png",
+    "Mexican" : "/static/pics/mexican.png",
+    "Pizza" : "/static/pics/pizza.png",
+    "Seafood" : "/static/pics/seafood.png",
+    "Steak" : "/static/pics/steak.png",
+    "Sushi" : "/static/pics/sushi.png",
+    "Thai" : "/static/pics/thai.png"
+}
+# entertainment_image_url = {
+#     "Movies" : ,
+#     "Music" : ,
+#     "Performances" : ,
+#     "Parks" : ,
+#     "Museums" : ,
+#     "Shopping Malls" : ,
+#     "Game Rooms" : ,
+#     "Sports" :
+# }
+
 class WelcomePage(webapp2.RequestHandler):
     def get(self):
         template = the_jinja_env.get_template('main.html')
@@ -27,7 +54,8 @@ class Restaurant(webapp2.RequestHandler):
     def get(self):
         template = the_jinja_env.get_template('restaurant.html')
         restaurant_type = get_random_restaurant()
-        template_vars = {"type" : restaurant_type}
+        template_vars = {"type" : restaurant_type,
+                         "image_url" : food_image_url[restaurant_type]}
         self.response.write(template.render(template_vars))  # the response
 
 class Entertainment(webapp2.RequestHandler):
