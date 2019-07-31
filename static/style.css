@@ -1,21 +1,14 @@
 html {
-background: linear-gradient(41deg, #22e878, #0b91ff);
-background-size: 400% 400%;
+  background: linear-gradient(313deg, #d4eaff, #e3ffd4, #fcffd4, #d4cdfb, #a9d1ff);
+  background-size: 1000% 1000%;
 
--o-animation: AnimationName 22s ease infinite;
-animation: AnimationName 22s ease infinite;
-
-
-@-o-keyframes AnimationName {
-    0%{background-position:0% 92%}
-    50%{background-position:100% 9%}
-    100%{background-position:0% 92%}
+  animation: SelectionAnimation 30s ease infinite;
 }
-@keyframes AnimationName {
-    0%{background-position:0% 92%}
-    50%{background-position:100% 9%}
-    100%{background-position:0% 92%}
- }
+
+@keyframes SelectionAnimation {
+    0%{background-position:0% 0%}
+    50%{background-position:93% 100%}
+    100%{background-position:0% 0%}
 }
 
 html{
