@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Restaurants</title>
     <link rel="stylesheet" href="static/style.css">
     <link href="https://fonts.googleapis.com/css?family=Text+Me+One&display=swap" rel="stylesheet">
     <style>
@@ -37,11 +37,22 @@
         <img src="{{image_url}}" alt="Your food typ!">
       </div>
     </div>
-    <div class="flex-item">
-      <iframe width="365px" height="365px" frameborder="0" style="border:1%"  src="https://www.google.com/maps/embed/v1/search?q={{type}}&key=AIzaSyBqHI9MkIB2-HJ_5c9tBDi1XhQ1CQQSvJI" allowfullscreen>
+    <div>
+      <iframe width="365px" height="365px" frameborder="20" style="border:1%"  src="https://www.google.com/maps/embed/v1/search?q={{type}}&key=AIzaSyBqHI9MkIB2-HJ_5c9tBDi1XhQ1CQQSvJI" allowfullscreen>
       </iframe>
     </div>
-  </div>
-</section>
+    <div>
+      <h3>Do you have any dietary restrictions?</h3>
+      <form>
+        <input type="checkbox" name="lactose_intolerance" value="lactose_intolerance">Lactose Intolerance<br>
+        <input type="checkbox" name="vegetarians_vegans" value="vegetarians_vegans">Vegetarian and Vegans<br>
+        <input type="checkbox" name="peanut" value="peanut">Peanut Allergies<br>
+        <input type="checkbox" name="diabetic" value="diabetic">Diabetic<br>
+        <input type="checkbox" name="celiac" value="celiac">Celiac Disease (Gluten Free)<br>
+        <input type="checkbox" name="kosher" value="kosher">Kosher<br>
+        <input type="checkbox" name="halal" value="halal">Halal<br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
 </body>
 </html>
