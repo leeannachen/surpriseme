@@ -25,7 +25,7 @@ food_image_url = {
     "French" : "/static/pics/french.png",
     "Hamburger" : "/static/pics/hamburger.png",
     "Indian" : "/static/pics/indian.png",
-    "Italian" : "/static/pics/italin.png",
+    "Italian" : "/static/pics/italian.png",
     "Japanese" : "/static/pics/japanese.png",
     "Mexican" : "/static/pics/mexican.png",
     "Pizza" : "/static/pics/pizza.png",
