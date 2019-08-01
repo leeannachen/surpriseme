@@ -53,13 +53,11 @@ html {
 }
 
 .result{
-float:left;
-padding-left: 36%;
-flex-wrap: wrap;
+  float:left;
+  flex-wrap: wrap;
 }
 
 .iframeapi{
-  float:right;
   flex: auto;
   flex-wrap: wrap;
 }
@@ -67,4 +65,5 @@ flex-wrap: wrap;
 img {
   height: 70%;
   width: 70%;
+  align-items: center;
 }
