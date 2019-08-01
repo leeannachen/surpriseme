@@ -6,12 +6,11 @@
     <link rel="stylesheet" href="static/style.css">
     <link href="https://fonts.googleapis.com/css?family=Text+Me+One&display=swap" rel="stylesheet">
     <style>
-        .container{
-          display: flex;
-        }
         .flex-item{
-          flex-grow: 1;
           align-items: center;
+          float: left;
+          width: 30%;
+          height: 100%;
         }
         .form{
           width:inherit;
@@ -88,8 +87,7 @@
       </div>
     </div>
     <div class="fixed">
-      <iframe height="450" width="450" align = "middle" frameborder="0" style="border:0"  src="https://www.google.com/maps/embed/v1/search?q={{type}}+{{distance}}+4.5+&key=AIzaSyBqHI9MkIB2-HJ_5c9tBDi1XhQ1CQQSvJI" allowfullscreen>
-      </iframe>
+      <iframe id = "map" height="550px" width="550px" align = "middle" frameborder="0" style="border:0"  src="https://www.google.com/maps/embed/v1/search?q={{type}}&key=AIzaSyBqHI9MkIB2-HJ_5c9tBDi1XhQ1CQQSvJI"></iframe>
     </div>
     </section>
     <section id="forms">

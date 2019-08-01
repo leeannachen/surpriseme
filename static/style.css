@@ -63,10 +63,28 @@ html {
 
 .buttons{
   margin-left: 37%;
+  margin-right: 37%;
+}
+
+.fixed{
+  float: left;
+  width: 65%;
+  height: 100%;
+  margin-right: 3%;
+}
+
+iframe#map{
+  height: 100%;
+  width: 100%;
 }
 
 img {
   height: 70%;
   width: 70%;
   align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
 }
