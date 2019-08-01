@@ -29,6 +29,7 @@ html {
   background-size: 1000% 1000%;
   animation: NameAnimation 35s ease infinite;
 }
+
 .anchors{
   font-family: 'Text Me One', sans-serif;
 }
@@ -51,16 +52,14 @@ html {
 
 .result{
 float:left;
-margin:10%;
+padding-left: 36%;
+flex-wrap: wrap;
 }
 
 .iframeapi{
   float:right;
-  margin:10%;
-  align-items: center;
-  align-self: center;
-  align-content: center;
-  margin-bottom: 60%;
+  flex: auto;
+  flex-wrap: wrap;
 }
 
 img {
