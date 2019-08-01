@@ -23,21 +23,27 @@ html {
 
 #restaurantid{
   margin:left;
+  text-decoration: none;
 }
 
 .anchors{
   font-family: 'Text Me One', sans-serif;
   font-size: 60px;
   border-radius: 30px;
-  border: 2%  #ff2667;
+  border: 5px double #000000;
   background: linear-gradient(342deg, #d8ecff, #9ca6dd, #b69ae4, #a8e4d5, #bfeacc);
   background-size: 1000% 1000%;
   animation: NameAnimation 35s ease infinite;
-  color: white
+  color: white;
+  margin-bottom: 1em;
+
 }
 
 #entertainmentid{
   margin:right;
+  text-decoration: none;
+
+
 }
 
 @keyframes NameAnimation {
@@ -47,8 +53,8 @@ html {
 }
 
 .result{
-float:left;
-flex-wrap: wrap;
+  float:left;
+  flex-wrap: wrap;
 }
 
 .iframeapi{
