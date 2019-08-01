@@ -56,6 +56,10 @@ flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
+.buttons{
+  margin-left: 37%;
+}
+
 img {
   height: 70%;
   width: 70%;
