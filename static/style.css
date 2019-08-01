@@ -47,8 +47,8 @@ html {
 }
 
 .result{
-float:left;
-flex-wrap: wrap;
+  float:left;
+  flex-wrap: wrap;
 }
 
 .iframeapi{
