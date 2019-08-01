@@ -25,7 +25,7 @@ food_image_url = {
     "French" : "/static/pics/french.png",
     "Hamburger" : "/static/pics/hamburger.png",
     "Indian" : "/static/pics/indian.png",
-    "Italian" : "/static/pics/italin.png",
+    "Italian" : "/static/pics/italian.png",
     "Japanese" : "/static/pics/japanese.png",
     "Mexican" : "/static/pics/mexican.png",
     "Pizza" : "/static/pics/pizza.png",
@@ -34,16 +34,16 @@ food_image_url = {
     "Sushi" : "/static/pics/sushi.png",
     "Thai" : "/static/pics/thai.png"
 }
-# entertainment_image_url = {
-#     "Movies" : ,
-#     "Music" : ,
-#     "Performances" : ,
-#     "Parks" : ,
-#     "Museums" : ,
-#     "Shopping Malls" : ,
-#     "Game Rooms" : ,
-#     "Sports" :
-# }
+entertainment_image_url = {
+    "Movies" : "/static/pics/movie.png",
+    "Music" : "/static/pics/music.png",
+    "Performances" : "/static/pics/performances.png",
+    "Parks" : "/static/pics/parks.png",
+    "Museums" : "/static/pics/museums.png",
+    "Shopping Malls" : "/static/pics/mall.png",
+    "Game Rooms" : "/static/pics/treasure-map.png",
+    "Sports" : "/static/pics/sport.png"
+}
 
 class WelcomePage(webapp2.RequestHandler):
     def get(self):
@@ -62,7 +62,8 @@ class Entertainment(webapp2.RequestHandler):
     def get(self):
         template = the_jinja_env.get_template('entertainment.html')
         entertainment_type = get_random_entertainment()
-        template_vars = {"type" : entertainment_type}
+        template_vars = {"type" : entertainment_type,
+                         "image_url" : entertainment_image_url[entertainment_type]}
         self.response.write(template.render(template_vars))  # the response
 
 
