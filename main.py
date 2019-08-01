@@ -18,7 +18,6 @@ def get_random_entertainment():
     entertainment_type = random.choice(types2)
     return entertainment_type
 
-
 food_image_url = {
     "American" : "/static/pics/american.png",
     "Barbecue" : "/static/pics/barbecue.png",
@@ -57,9 +56,6 @@ class Restaurant(webapp2.RequestHandler):
         restaurant_type = get_random_restaurant()
         template_vars = {"type" : restaurant_type,
                          "image_url" : food_image_url[restaurant_type],
-                         "dietary_restrictions" : self.request.get(dietary_restrictions),
-                         "distance" : self.request.get(distance),
-                          "price" : self.request.get(price)
                           }
         self.response.write(template.render(template_vars))  # the response
 
@@ -69,9 +65,6 @@ class Entertainment(webapp2.RequestHandler):
         entertainment_type = get_random_entertainment()
         template_vars = {"type" : entertainment_type,
                          "image_url" : entertainment_image_url[entertainment_type],
-                         "distance" : self.request.get(distance),
-                         "price" : self.request.get(price),
-                         "dietary_restrictions" : self.request.get(dietary_restrictions)
                          }
         self.response.write(template.render(template_vars))  # the response
 
