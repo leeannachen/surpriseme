@@ -55,7 +55,8 @@ class Restaurant(webapp2.RequestHandler):
         template = the_jinja_env.get_template('restaurant.html')
         restaurant_type = get_random_restaurant()
         template_vars = {"type" : restaurant_type,
-                         "image_url" : food_image_url[restaurant_type]}
+                         "image_url" : food_image_url[restaurant_type],
+                          }
         self.response.write(template.render(template_vars))  # the response
 
 class Entertainment(webapp2.RequestHandler):
@@ -63,9 +64,9 @@ class Entertainment(webapp2.RequestHandler):
         template = the_jinja_env.get_template('entertainment.html')
         entertainment_type = get_random_entertainment()
         template_vars = {"type" : entertainment_type,
-                         "image_url" : entertainment_image_url[entertainment_type]}
+                         "image_url" : entertainment_image_url[entertainment_type],
+                         }
         self.response.write(template.render(template_vars))  # the response
-
 
 app = webapp2.WSGIApplication([
     ('/', WelcomePage),

@@ -90,21 +90,37 @@
       <iframe id = "map" height="550px" width="550px" align = "middle" frameborder="0" style="border:0"  src="https://www.google.com/maps/embed/v1/search?q={{type}}&key=AIzaSyBqHI9MkIB2-HJ_5c9tBDi1XhQ1CQQSvJI"></iframe>
     </div>
     </section>
-    <section id="form">
-      <div id="form-anchor"></div>
-      <div id="paddingneeded">
+    <section id="forms">
+      <div>
       <h2>Do you have any dietary restrictions?</h2>
-      <form>
-        <input type="checkbox" name="lactose_intolerance" value="lactose_intolerance">Lactose Intolerance<br>
+      <form name="dietary_restrictions" type="GET" action="">
         <input type="checkbox" name="vegetarians_vegans" value="vegetarians_vegans">Vegetarian and Vegans<br>
         <input type="checkbox" name="peanut" value="peanut">Peanut Allergies<br>
-        <input type="checkbox" name="diabetic" value="diabetic">Diabetic<br>
         <input type="checkbox" name="celiac" value="celiac">Celiac Disease (Gluten Free)<br>
         <input type="checkbox" name="kosher" value="kosher">Kosher<br>
         <input type="checkbox" name="halal" value="halal">Halal<br>
-        <input type="submit" value="Submit">
-      </form>
     </div>
+    <div>
+    <h2>Price?</h2>
+    <select name="price" type="GET" action="/restaurant">
+      <option value="$">Inexpensive</option>
+      <option value="$$">Moderate</option>
+      <option value="$$$">Expensive</option>
+      <option value="$$$$">Luxury</option>
+    </select>
+  </div>
+  <div>
+  <h2>How far?</h2>
+  <select name = "distance" type="GET" action="/restaurant">
+    <option value="one_mile">Within 1-3 mile(s)</option>
+    <option value="five_miles">Within 1-5 mile(s)</option>
+    <option value="eight_miles">Within 1-8 mile(s)</option>
+    <option value="ten_miles">Within 1-10  mile(s)</option>
+  </select>
+  <input type="submit" value="Submit">
+</form>
+
+</div>
     </section>
 </body>
 </html>
