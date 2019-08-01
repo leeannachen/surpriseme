@@ -23,6 +23,12 @@ html {
 
 #restaurantid{
   margin:left;
+}
+
+.anchors{
+  font-family: 'Text Me One', sans-serif;
+  font-size: 60px;
+  border-radius: 30px;
   border: 2%  #ff2667;
   background: linear-gradient(342deg, #d8ecff, #9ca6dd, #b69ae4, #a8e4d5, #bfeacc);
   background-size: 1000% 1000%;
@@ -30,20 +36,8 @@ html {
   color: white
 }
 
-.anchors{
-  font-family: 'Text Me One', sans-serif;
-  font-size: 60px;
-  border-radius: 30px;
-
-}
-
 #entertainmentid{
   margin:right;
-  border: 2%  #ff2667;
-  background: linear-gradient(342deg, #d8ecff, #9ca6dd, #b69ae4, #a8e4d5, #bfeacc);
-  background-size: 1000% 1000%;
-  animation: NameAnimation 35% ease infinite;
-  color: white
 }
 
 @keyframes NameAnimation {
