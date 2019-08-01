@@ -15,35 +15,35 @@ html {
   text-align: center;
 }
 #surprisemebutton{
-  font-size: 80px;
+  font-size: 6em;
   text-align: center;
   padding: 10%;
   border: 10px;
 }
 
 #restaurantid{
-  float: left;
-  padding: 2%;
-  border: 2%  #ff2667;
-  background: linear-gradient(342deg, #d8ecff, #9ca6dd, #b69ae4, #a8e4d5, #bfeacc);
-  background-size: 1000% 1000%;
-  animation: NameAnimation 35s ease infinite;
-  color: white
+  margin:left;
+  text-decoration: none;
 }
 
 .anchors{
   font-family: 'Text Me One', sans-serif;
+  font-size: 60px;
+  border-radius: 30px;
+  border: 5px double #000000;
+  background: linear-gradient(342deg, #d8ecff, #9ca6dd, #b69ae4, #a8e4d5, #bfeacc);
+  background-size: 1000% 1000%;
+  animation: NameAnimation 35s ease infinite;
+  color: white;
+  margin-bottom: 1em;
+
 }
 
 #entertainmentid{
-  width: 60%;
-  float: right;
-  padding: 2%;
-  border: 2%  #ff2667;
-  background: linear-gradient(342deg, #d8ecff, #9ca6dd, #b69ae4, #a8e4d5, #bfeacc);
-  background-size: 1000% 1000%;
-  animation: NameAnimation 35% ease infinite;
-  color: white
+  margin:right;
+  text-decoration: none;
+
+
 }
 
 @keyframes NameAnimation {
@@ -53,18 +53,21 @@ html {
 }
 
 .result{
-float:left;
-padding-left: 36%;
-flex-wrap: wrap;
+  float:left;
+  flex-wrap: wrap;
 }
 
 .iframeapi{
-  float:right;
   flex: auto;
   flex-wrap: wrap;
+}
+
+.buttons{
+  margin-left: 37%;
 }
 
 img {
   height: 70%;
   width: 70%;
+  align-items: center;
 }
