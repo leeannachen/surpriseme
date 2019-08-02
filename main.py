@@ -19,20 +19,20 @@ def get_random_entertainment():
     return entertainment_type
 
 food_image_url = {
-    "American" : "/static/pics/american.png",
-    "Barbecue" : "/static/pics/barbecue.png",
-    "Chinese" : "/static/pics/chinese.png",
-    "French" : "/static/pics/french.png",
-    "Hamburger" : "/static/pics/hamburger.png",
-    "Indian" : "/static/pics/indian.png",
-    "Italian" : "/static/pics/italian.png",
-    "Japanese" : "/static/pics/japanese.png",
-    "Mexican" : "/static/pics/mexican.png",
-    "Pizza" : "/static/pics/pizza.png",
-    "Seafood" : "/static/pics/seafood.png",
-    "Steak" : "/static/pics/steak.png",
-    "Sushi" : "/static/pics/sushi.png",
-    "Thai" : "/static/pics/thai.png"
+    "American" : "/static/pics/American.png",
+    "Barbecue" : "/static/pics/Barbecue.png",
+    "Chinese" : "/static/pics/Chinese.png",
+    "French" : "/static/pics/French.png",
+    "Hamburger" : "/static/pics/Hamburger.png",
+    "Indian" : "/static/pics/Indian.png",
+    "Italian" : "/static/pics/Italian.png",
+    "Japanese" : "/static/pics/Japanese.png",
+    "Mexican" : "/static/pics/Mexican.png",
+    "Pizza" : "/static/pics/Pizza.png",
+    "Seafood" : "/static/pics/Seafood.png",
+    "Steak" : "/static/pics/Steak.png",
+    "Sushi" : "/static/pics/Sushi.png",
+    "Thai" : "/static/pics/Thai.png"
 }
 entertainment_image_url = {
     "Movies" : "/static/pics/movie.png",
