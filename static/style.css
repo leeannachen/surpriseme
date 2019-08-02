@@ -53,10 +53,7 @@ text-decoration: none;
   float:left;
   flex-wrap: wrap;
 }
-.iframeapi{
-  flex: auto;
-  flex-wrap: wrap;
-}
+
 .fixed{
   float: left;
   width: 65%;
