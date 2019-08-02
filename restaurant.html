@@ -15,12 +15,6 @@
         height: 100%;
         width: 100%;
       }
-      .image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-      }
     </style>
 </head>
 <body>
@@ -40,7 +34,7 @@
       </div>
     </div>
     <div class="fixed">
-      <iframe id = "map" height="550px" width="550px"  frameborder="0"   src="https://www.google.com/maps/embed/v1/search?q={{type}}+{{cost}}&key=AIzaSyBqHI9MkIB2-HJ_5c9tBDi1XhQ1CQQSvJI"></iframe>
+      <iframe id = "map" height="550px" width="550px"  frameborder="0"   src="https://www.google.com/maps/embed/v1/search?q={{type}}&key=AIzaSyBqHI9MkIB2-HJ_5c9tBDi1XhQ1CQQSvJI"></iframe>
     </div>
     </section>
     <a name="form"></a>
@@ -48,9 +42,11 @@
       <div>
       <h2>Do you have any dietary restrictions?</h2>
       <form name="dietary_restrictions" type="GET" action="">
-        <input type="checkbox" name="vegetarians_vegans" value="vegetarians_vegans">Vegans<br>
-        <input type="checkbox" name="peanut" value="peanut">Vegetarian<br>
-      </form>
+        <input type="checkbox" name="vegetarians_vegans" value="vegetarians_vegans">Vegetarian and Vegans<br>
+        <input type="checkbox" name="peanut" value="peanut">Peanut Allergies<br>
+        <input type="checkbox" name="celiac" value="celiac">Celiac Disease (Gluten Free)<br>
+        <input type="checkbox" name="kosher" value="kosher">Kosher<br>
+        <input type="checkbox" name="halal" value="halal">Halal<br>
     </div>
     <div>
     <h2>Price?</h2>
