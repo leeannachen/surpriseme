@@ -59,7 +59,10 @@ class Restaurant(webapp2.RequestHandler):
         template_vars = {"type" : restaurant_type,
                          "image_url" : food_image_url[restaurant_type],
                          "cost" : self.request.get("price"),
-                         "distance" : self.request.get("distance")
+                         "vegetarian" : self.request.get("vegetarian"),
+                         "vegan" : self.request.get("vegan"),
+                         "halal" : self.request.get("halal"),
+                         "kosher" : self.request.get("kosher")
                           }
         self.response.write(template.render(template_vars))  # the response
 
