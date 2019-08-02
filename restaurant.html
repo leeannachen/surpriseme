@@ -34,41 +34,23 @@
       </div>
     </div>
     <div class="fixed">
-      <iframe id = "map" height="550px" width="550px"  frameborder="0"   src="https://www.google.com/maps/embed/v1/search?q={{type}}&key=AIzaSyBqHI9MkIB2-HJ_5c9tBDi1XhQ1CQQSvJI"></iframe>
-    </div>
-    </section>
-    <a name="form"></a>
-    <section class="forms">
-      <div>
-      <h2>Do you have any dietary restrictions?</h2>
+      <iframe id = "map" height="550px" width="550px"  frameborder="0"   src="https://www.google.com/maps/embed/v1/search?q={{type}}+{{cost}}&key=AIzaSyBqHI9MkIB2-HJ_5c9tBDi1XhQ1CQQSvJI"></iframe>
+      <h5>Do you have any dietary restrictions?</h5>
       <form name="dietary_restrictions" type="GET" action="">
-        <input type="checkbox" name="vegetarians_vegans" value="vegetarians_vegans">Vegetarian and Vegans<br>
-        <input type="checkbox" name="peanut" value="peanut">Peanut Allergies<br>
-        <input type="checkbox" name="celiac" value="celiac">Celiac Disease (Gluten Free)<br>
-        <input type="checkbox" name="kosher" value="kosher">Kosher<br>
+        <input type="checkbox" name="vegans" value="vegan">Vegan<br>
+        <input type="checkbox" name="vegetarians" value="vegetarian">Vegetarian<br>
         <input type="checkbox" name="halal" value="halal">Halal<br>
-    </div>
-    <div>
-    <h2>Price?</h2>
+        <input type="checkbox" name="kosher" value="kosher">Kosher<br>
+      </form>
+    <h5>Price?</h5>
     <select name="price" type="GET" action="/restaurant">
-      <option value="Inexpensive">Inexpensive</option>
-      <option value="Moderate">Moderate</option>
-      <option value="Expensive">Expensive</option>
+      <option value="Inexpensive">Cheap/Inexpensive</option>
+      <option value="Average Price">Moderate</option>
       <option value="Luxury">Luxury</option>
     </select>
-  </div>
-  <div>
-  <h2>How far?</h2>
-  <select name = "distance" type="GET" action="/restaurant">
-    <option value="Within 1-3 mile(s)">Within 1-3 mile(s)</option>
-    <option value="Within 1-5 mile(s)">Within 1-5 mile(s)</option>
-    <option value="Within 1-8 mile(s)">Within 1-8 mile(s)</option>
-    <option value="Within 1-10  mile(s)">Within 1-10  mile(s)</option>
-  </select>
   <input type="submit" value="Submit">
   <input type="hidden" name="type" value="{{type}}">
   </form>
   </div>
-  </section>
 </body>
 </html>
