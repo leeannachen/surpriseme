@@ -98,21 +98,22 @@
     <div>
     <h2>Price?</h2>
     <select name="price" type="GET" action="/restaurant">
-      <option value="$">Inexpensive</option>
-      <option value="$$">Moderate</option>
-      <option value="$$$">Expensive</option>
-      <option value="$$$$">Luxury</option>
+      <option value="Inexpensive">Inexpensive</option>
+      <option value="Moderate">Moderate</option>
+      <option value="Expensive">Expensive</option>
+      <option value="Luxury">Luxury</option>
     </select>
   </div>
   <div>
   <h2>How far?</h2>
   <select name = "distance" type="GET" action="/restaurant">
-    <option value="one_mile">Within 1-3 mile(s)</option>
-    <option value="five_miles">Within 1-5 mile(s)</option>
-    <option value="eight_miles">Within 1-8 mile(s)</option>
-    <option value="ten_miles">Within 1-10  mile(s)</option>
+    <option value="Within 1-3 mile(s)">Within 1-3 mile(s)</option>
+    <option value="Within 1-5 mile(s)">Within 1-5 mile(s)</option>
+    <option value="Within 1-8 mile(s)">Within 1-8 mile(s)</option>
+    <option value="Within 1-10  mile(s)">Within 1-10  mile(s)</option>
   </select>
   <input type="submit" value="Submit">
+  <input type="hidden" name="type" value="{{type}}">
   </form>
   </div>
   </section>
