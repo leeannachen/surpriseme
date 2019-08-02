@@ -27,30 +27,31 @@
           <img src="{{image_url}}" alt="Your food type!">
         </div>
         <div class= "buttons">
-          <a class="buttonstyle"href="/">Home</a>
-          <a class="buttonstyle" href="/restaurant">Again</a>
+          <a id="leftone" class="buttonstyle"href="/">Home</a>
+          <a id="rightone" class="buttonstyle" href="/restaurant">Again</a>
+          <div class="formform">
+          <h5>Do you have any dietary restrictions?</h5>
+          <form name="dietary_restrictions" type="GET" action="">
+            <input type="checkbox" name="vegans" value="vegan">Vegan<br>
+            <input type="checkbox" name="vegetarians" value="vegetarian">Vegetarian<br>
+            <input type="checkbox" name="halal" value="halal">Halal<br>
+            <input type="checkbox" name="kosher" value="kosher">Kosher<br>
+        <h5>Price?</h5>
+        <select name="price" type="GET" action="/restaurant">
+          <option value="Inexpensive">Inexpensive</option>
+          <option value="Average Price">Moderate</option>
+          <option value="Luxury">Luxury</option>
+        </select>
+      <input type="hidden" name="type" value="{{type}}">
+      <input type="submit" value="Submit">
+      </div>
         </div>
 
       </div>
     </div>
     <div class="fixed">
       <iframe id = "map" height="550px" width="550px"  frameborder="0"   src="https://www.google.com/maps/embed/v1/search?q={{type}}+{{cost}}+{{vegan}}+{{vegetarian}}+{{halal}}+{{kosher}}&key=AIzaSyBqHI9MkIB2-HJ_5c9tBDi1XhQ1CQQSvJI"></iframe>
-      <div class="formform">
-      <h5>Do you have any dietary restrictions?</h5>
-      <form name="dietary_restrictions" type="GET" action="">
-        <input type="checkbox" name="vegans" value="vegan">Vegan<br>
-        <input type="checkbox" name="vegetarians" value="vegetarian">Vegetarian<br>
-        <input type="checkbox" name="halal" value="halal">Halal<br>
-        <input type="checkbox" name="kosher" value="kosher">Kosher<br>
-    <h5>Price?</h5>
-    <select name="price" type="GET" action="/restaurant">
-      <option value="Inexpensive">Inexpensive</option>
-      <option value="Average Price">Moderate</option>
-      <option value="Luxury">Luxury</option>
-    </select>
-  <input type="hidden" name="type" value="{{type}}">
-  <input type="submit" value="Submit">
-  </div>
+
   </div>
 </body>
 </html>
